@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- others -->
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                            HOME PAGE START                           -->
+    <header>
+        <!-- ==== shopping-card offcanvas right start ====== -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasShop" aria-labelledby="offcanvasExampleLabel">
+
+            <div class="offcanvas-header p-0 pb-3">
+                <button class="close_button" data-bs-dismiss="offcanvas">
+                    <iconify-icon icon="gg:close"></iconify-icon>
+                </button>
+                <h4 class="offcanvas-title" id="offcanvasExampleLabel">Shopping Card <span>(2)</span> </h4>
+            </div>
+
+            <div class="offcanvas-body p-0">
+
+                <div class="cart_product flex-align-center">
+                    <div class="img_wrapper">
+                        <img src="./assets/images/mobile_header_img1.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="contents_wrapper ms-2">
+                        <h6>Fresh Indian Orange</h6>
+
+
+                        <div class="count_grp flex-align-center">
+                            <h5><span class="weight">1</span> kg x <span class="pricing">12.00</span></h5>
+                        </div>
+                    </div>
+
+                    <div class="btn_wrapper ms-auto flex-align-center">
+                        <button class="iconify" type="button">
+                            <iconify-icon icon="radix-icons:cross-2"></iconify-icon>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="cart_product flex-align-center">
+                    <div class="img_wrapper">
+                        <img src="./assets/images/mobile_header_img2.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="contents_wrapper ms-2">
+                        <h6>Green Apple</h6>
+
+
+                        <div class="count_grp flex-align-center">
+                            <h5><span class="weight">1</span> kg x <span class="pricing">14.00</span></h5>
+                        </div>
+                    </div>
+
+                    <div class="btn_wrapper ms-auto flex-align-center">
+                        <button class="iconify" type="button">
+                            <iconify-icon icon="radix-icons:cross-2"></iconify-icon>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="offcanvas-footer">
+
+                <div class="total_count flex-align-center justify-content-between my-4">
+                    <h6>2 Product</h6>
+                    <h5>$26.00</h5>
+                </div>
+
+                <div class="button_grp">
+                    <a href="./checkout.html" class="checkout">Checkout</a>
+                    <a href="./shopping-cart.html" class="cart">Go To Cart</a>
+                </div>
+
+            </div>
+        </div>
+        <!-- ==== shopping-card offcanvas right end ====== -->
+
+        <!-- ========= top header SECTION START =============== -->
+        <section id="top-header">
+            <div class="container">
+                <div class="row g-0 align-items-center">
+                    <div class="location col-lg-6">
+                        <p class="flex-align-center">
+                            <span class="iconify"><iconify-icon icon="ep:location"></iconify-icon></span>
+                            Store Location: Lincoln- 344, Illinois, Chicago, USA
+                        </p>
+                    </div>
+
+                    <div class="utilities col-lg-6 d-flex justify-content-end">
+
+
+
+                        <div class="translator d-none d-lg-block">
+                            <select name="translator" class="">
+                                <option value="">Eng</option>
+                                <option value="">Ban</option>
+                            </select>
+
+
+                            <span class="iconify arrow">
+                                <iconify-icon class="translate_arrow" icon="ep:arrow-down-bold"></iconify-icon>
+                                <iconify-icon class="translate_arrow" icon="ep:arrow-up-bold"
+                                    style="display: none;"></iconify-icon>
+                            </span>
+                        </div>
+
+
+
+                        <div class="currency_convert d-none d-lg-block">
+                            <select name="currency_convert">
+                                <option value="">USD</option>
+                                <option value="">BDT</option>
+                            </select>
+
+
+                            <span class="iconify arrow">
+                                <iconify-icon class="currency_arrow" icon="ep:arrow-down-bold"></iconify-icon>
+                                <iconify-icon class="currency_arrow" icon="ep:arrow-up-bold"
+                                    style="display: none;"></iconify-icon>
+                            </span>
+                        </div>
+
+
+                        <span class="sign_opt d-none d-lg-block">
+                            <a href="">Sign In</a> / <a href="">Sign Up</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========= top header SECTION END =============== -->
+
+        <!-- ========= middle header SECTION START =============== -->
+        <section id="middle-header" class="d-none d-lg-block">
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="branding col-lg-3">
+                        <a class="brand_logo navbar-brand" href="#">
+                            <img src="./assets/images/brand_logo.png" alt="">
+                            Ecobazar
+                        </a>
+                    </div>
+
+                    <div class="search_bar col-lg-6">
+                        <form class="search_form" role="search">
+                            <input id="input_nav" class="search_input" type="text" placeholder="Search" />
+                            <label for="input_nav" class="search_icon iconify"><iconify-icon
+                                    icon="iconamoon:search"></iconify-icon></label>
+                            <button class="search_btn" type="submit">Search</button>
+                        </form>
+                    </div>
+
+                    <div class="cart col-lg-3 d-flex justify-content-end">
+                        <ul class="icon_group d-flex">
+
+                            <li class="wishlist">
+                                <a class="wishlist_icon iconify" aria-current="page" href="#">
+                                    <iconify-icon icon="si:heart-line"></iconify-icon>
+                                </a>
+                            </li>
+
+                            <li class="shopping_cart">
+                                <div class="cart_wrapper">
+                                    <a class="cart_icon iconify" aria-current="page" data-bs-toggle="offcanvas"
+                                        href="#offcanvasShop">
+                                        <iconify-icon icon="ph:handbag-light"></iconify-icon>
+                                    </a>
+                                    <p class="item_count">2</p>
+                                </div>
+
+                                <div class="cart_contents">
+                                    <p>Shopping cart:</p>
+                                    <h4>$57.00</h4>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </section>
+        <!-- ========= middle header SECTION END =============== -->
+
+        <!-- ========= bottom header SECTION START =============== -->
+        <section id="bottom-header" class="d-none d-lg-block">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-lg-8 pages">
+                        <ul class="page_list">
+                            <li class="categories">
+                                <button class="flex-align-center">
+                                    <span class="iconify">
+                                        <iconify-icon icon="iconoir:menu"></iconify-icon>
+                                    </span>
+                                    All Categories
+                                    <span class="iconify">
+                                        <iconify-icon class="category_arrow" icon="iconamoon:arrow-down-2-light">
+                                        </iconify-icon>
+                                        <iconify-icon class="category_arrow" icon="iconamoon:arrow-up-2-light"
+                                            style="display: none;">
+                                        </iconify-icon>
+                                    </span>
+                                </button>
+                                <ul class="category_list">
+                                    <li>
+                                        <a href="#" class="flex-align-center">
+                                            <span class="iconify">
+                                                <iconify-icon icon="fluent:food-apple-20-regular"></iconify-icon>
+                                            </span>
+                                            Fresh Fruit
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="flex-align-center">
+                                            <span class="iconify">
+                                                <iconify-icon icon="carbon:fruit-bowl"></iconify-icon>
+                                            </span>
+                                            Vegetables
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="flex-align-center">
+                                            <span class="iconify">
+                                                <iconify-icon
+                                                    icon="fluent-emoji-high-contrast:cut-of-meat"></iconify-icon>
+                                            </span>
+                                            Fish & Meat
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="flex-align-center">
+                                            <span class="iconify">
+                                                <iconify-icon icon="cbi:eggs"></iconify-icon>
+                                            </span>
+                                            Eggs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="flex-align-center">
+                                            <span class="iconify">
+                                                <iconify-icon icon="streamline-ultimate:seasoning-food"></iconify-icon>
+                                            </span>
+                                            Spice
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="flex-align-center">
+                                            <span class="iconify">
+                                                <iconify-icon icon="tdesign:add"></iconify-icon>
+                                            </span>
+                                            View All Category
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="active-page"><a href="./index.html">Home</a></li>
+                            <li class=""><a href="#">Shop</a></li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 contact d-flex justify-content-end">
+                        <p class="flex-align-center contact_num"><span class="iconify"><iconify-icon
+                                    icon="ph:phone-call"></iconify-icon></span>(219) 555-0114</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========= bottom header SECTION END =============== -->
+
+        <!-- ========= mobile header SECTION START =============== -->
+        <section id="mobile-header" class="d-block d-lg-none">
+            <div class="container px-2">
+                <div class="row align-items-center g-0">
+
+                    <div class="col-1 mobile_menu">
+                        <!-- mobile-menu offcanvas left start-->
+                        <button class="flex-align-center menu_icon" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBothOptions">
+                            <span class="iconify"><iconify-icon icon="gg:menu-left-alt"></iconify-icon></span>
+                        </button>
+
+                        <div class="offcanvas offcanvas-start w-75" data-bs-scroll="true" tabindex="-1"
+                            id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+
+                            <div class="offcanvas-header p-0 pt-3">
+                                <button class="close_button" data-bs-dismiss="offcanvas">
+                                    <iconify-icon icon="gg:close"></iconify-icon>
+                                </button>
+                            </div>
+
+                            <div class="offcanvas-body p-0">
+                                <!-- nav & tabs start -->
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" data-bs-toggle="tab"
+                                            data-bs-target="#home-tab-pane">All Categories</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" data-bs-toggle="tab"
+                                            data-bs-target="#profile-tab-pane">Pages</button>
+                                    </li>
+
+                                </ul>
+
+                                <div class="tab-content" id="myTabContent">
+
+                                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                                        aria-labelledby="home-tab" tabindex="0">
+
+                                        <ul class="category_list">
+                                            <li>
+                                                <a href="#" class="flex-align-center">
+                                                    <span class="iconify">
+                                                        <iconify-icon
+                                                            icon="fluent:food-apple-20-regular"></iconify-icon>
+                                                    </span>
+                                                    Fresh Fruit
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="flex-align-center">
+                                                    <span class="iconify">
+                                                        <iconify-icon icon="carbon:fruit-bowl"></iconify-icon>
+                                                    </span>
+                                                    Vegetables
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="flex-align-center">
+                                                    <span class="iconify">
+                                                        <iconify-icon
+                                                            icon="fluent-emoji-high-contrast:cut-of-meat"></iconify-icon>
+                                                    </span>
+                                                    Fish & Meat
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="flex-align-center">
+                                                    <span class="iconify">
+                                                        <iconify-icon icon="cbi:eggs"></iconify-icon>
+                                                    </span>
+                                                    Eggs
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="flex-align-center">
+                                                    <span class="iconify">
+                                                        <iconify-icon
+                                                            icon="streamline-ultimate:seasoning-food"></iconify-icon>
+                                                    </span>
+                                                    Spice
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="flex-align-center">
+                                                    <span class="iconify">
+                                                        <iconify-icon icon="tdesign:add"></iconify-icon>
+                                                    </span>
+                                                    View All Category
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
+                                        aria-labelledby="profile-tab" tabindex="0">
+                                        <ul class="mobile_pages">
+                                            <li>
+                                                <a href="#">Home</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Shop</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Blog</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">About Us</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Contact Us</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <!-- nav & tabs end -->
+                            </div>
+
+                        </div>
+                        <!-- mobile-menu offcanvas left end-->
+                    </div>
+
+
+                    <div class="col-7 flex-align-center justify-content-center">
+                        <a class="brand_logo navbar-brand" href="#">
+                            <img src="./assets/images/brand_logo.png" alt="">
+                            Ecobazar
+                        </a>
+                    </div>
+
+                    <div class="col-4 mobile_icons">
+
+                        <ul class="icon_group d-flex justify-content-end">
+
+                            <li>
+                                <!-- search-bar offcanvas top start -->
+                                <a class="search_icon iconify" data-bs-toggle="offcanvas" href="#offcanvasTop">
+                                    <iconify-icon icon="si:search-line"></iconify-icon>
+                                </a>
+
+                                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop">
+                                    <div class="offcanvas-header pe-4">
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="offcanvas-body">
+
+                                        <div class="search_bar">
+                                            <form class="search_form" role="search">
+                                                <input id="input_offcanvas" class="search_input" type="text"
+                                                    placeholder="Search" />
+                                                <label for="input_offcanvas" class="search_icon iconify">
+                                                    <iconify-icon icon="iconamoon:search"></iconify-icon>
+                                                </label>
+                                                <button class="search_btn" type="submit">Search</button>
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- search-bar offcanvas top end -->
+                            </li>
+
+                            <li class="shopping_cart">
+                                <div class="cart_wrapper">
+                                    <a class="cart_icon iconify" aria-current="page" data-bs-toggle="offcanvas"
+                                        href="#offcanvasShop">
+                                        <iconify-icon icon="ph:handbag-light"></iconify-icon>
+                                    </a>
+                                    <p class="item_count">2</p>
+                                </div>
+
+                            </li>
+
+                            <li class="flex-align-center">
+                                <a class="iconify" aria-current="page" href="#">
+                                    <iconify-icon icon="fluent:phone-key-20-regular"></iconify-icon>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ========= mobile header SECTION END =============== -->
+    </header>
+
+    <main>
+        <!-- ========= banner SECTION START =============== -->
+        <section id="banner" class="afterHeadingSection">
+            <div class="container">
+
+
+                <button class="prev_arrow d-none d-lg-inline-flex iconify">
+                    <iconify-icon icon="bitcoin-icons:arrow-left-filled"></iconify-icon>
+                </button>
+
+                <button class="next_arrow d-none d-lg-inline-flex iconify">
+                    <iconify-icon icon="bitcoin-icons:arrow-right-filled"></iconify-icon>
+                </button>
+
+                <div class="banner_slider">
+
+                    <div class="slick-slide">
+
+                        <div class="row slide g-0 align-items-center">
+                            <div class="col-lg-6 img_wrapper">
+                                <img class="img-fluid" src="./assets/images/banner_img.png" alt="#">
+                                <div class="discount_label">
+                                    <h4>70%</h4>
+                                    <h5>OFF</h5>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-5 slide_contents">
+                                <h5>WELCOME TO SHOPERY</h5>
+                                <h3>Fresh & Healthy Organic Food</h3>
+                                <p>Free shipping on all your order. we deliver, you enjoy</p>
+                                <a href="" class="d-inline-flex align-items-center">
+                                    Shop now
+                                    <span class="iconify">
+                                        <iconify-icon icon="fluent:arrow-right-24-filled"></iconify-icon>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slick-slide">
+
+                        <div class="row slide g-0 align-items-center">
+                            <div class="col-lg-6 img_wrapper">
+                                <img class="img-fluid" src="./assets/images/banner_img.png" alt="#">
+                                <div class="discount_label">
+                                    <h4>70%</h4>
+                                    <h5>OFF</h5>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-5 slide_contents">
+                                <h5>WELCOME TO SHOPERY</h5>
+                                <h3>Fresh & Healthy Organic Food</h3>
+                                <p>Free shipping on all your order. we deliver, you enjoy</p>
+                                <a href="" class="d-inline-flex align-items-center">
+                                    Shop now
+                                    <span class="iconify">
+                                        <iconify-icon icon="fluent:arrow-right-24-filled"></iconify-icon>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slick-slide">
+
+                        <div class="row slide g-0 align-items-center">
+                            <div class="col-lg-6 img_wrapper">
+                                <img class="img-fluid" src="./assets/images/banner_img.png" alt="#">
+                                <div class="discount_label">
+                                    <h4>70%</h4>
+                                    <h5>OFF</h5>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-5 slide_contents">
+                                <h5>WELCOME TO SHOPERY</h5>
+                                <h3>Fresh & Healthy Organic Food</h3>
+                                <p>Free shipping on all your order. we deliver, you enjoy</p>
+                                <a href="" class="d-inline-flex align-items-center">
+                                    Shop now
+                                    <span class="iconify">
+                                        <iconify-icon icon="fluent:arrow-right-24-filled"></iconify-icon>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ========= banner SECTION END =============== -->
+
+        <!-- ========= feature SECTION START =============== -->
+        <section id="feature">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-lg-3 feature_card active_card">
+                        <div class="img_wrapper">
+                            <img class="img-fluid" src="./assets/images/feature_img1.png" alt="404">
+                        </div>
+                        <h4>Free Shipping</h4>
+                        <p>Free shipping with discount</p>
+                    </div>
+
+                    <div class="col-lg-3 feature_card">
+                        <div class="img_wrapper">
+                            <img class="img-fluid" src="./assets/images/feature_img2.png" alt="404">
+                        </div>
+                        <h4>Great Support 24/7</h4>
+                        <p>Instant access to Contact</p>
+                    </div>
+
+                    <div class="col-lg-3 feature_card">
+                        <div class="img_wrapper">
+                            <img class="img-fluid" src="./assets/images/feature_img3.png" alt="404">
+                        </div>
+                        <h4>100% Secure Payment</h4>
+                        <p>We ensure your money is save</p>
+                    </div>
+
+                    <div class="col-lg-3 feature_card">
+                        <div class="img_wrapper">
+                            <img class="img-fluid" src="./assets/images/feature_img4.png" alt="404">
+                        </div>
+                        <h4>Money-Back Guarantee</h4>
+                        <p>30 days money-back guarantee</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- ========= feature SECTION END =============== -->
+
+        <!-- ========= products SECTION START =============== -->
+        <section id="products">
+            <div class="container">
+                <div class="products_header flex-justify-center">
+                    <div class="wrapper text-center">
+                        <h4 class="title">Introducing Our Products</h4>
+                        <ul class="filter">
+                            <li><button class="active_btn">All</button></li>
+                            <li><button>Vegetables</button></li>
+                            <li><button>Fruit</button></li>
+                            <li><button>Meat & Fish</button></li>
+                            <li><button>View All</button></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row products_contents g-0">
+
+                    <div class="col-lg-3 col-6 p_card">
+
+                        <div class="img_wrapper w-100">
+                            <img class="w-100" src="./assets/images/product_img1.png" alt="404">
+
+                            <p>Sale 50%</p>
+                            <a href="#" class="iconify"><iconify-icon icon="si:heart-line"></iconify-icon></a>
+                            <a href="#" class="iconify"><iconify-icon icon="famicons:eye-outline"></iconify-icon></a>
+                        </div>
+
+                        <div class="card_contents flex-align-center justify-content-between">
+                            <div class="description">
+                                <a href="./single-product.html">Green Apple</a>
+                                <h4>$14.99 <del>$20.99</del></h4>
+
+                                <div class="ratings flex-align-center">
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                </div>
+                            </div>
+                            <div class="cart flex-align-center">
+                                <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasShop" class="iconify"><iconify-icon icon="ph:handbag-light"></iconify-icon></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-6 p_card">
+
+                        <div class="img_wrapper w-100">
+                            <img class="w-100" src="./assets/images/product_img2.png" alt="404">
+
+                            <p class="d-none">Sale 50%</p>
+                            <a href="#" class="iconify"><iconify-icon icon="si:heart-line"></iconify-icon></a>
+                            <a href="#" class="iconify"><iconify-icon icon="famicons:eye-outline"></iconify-icon></a>
+                        </div>
+
+                        <div class="card_contents flex-align-center justify-content-between">
+                            <div class="description">
+                                <a href="./single-product.html">Surjapur Mango</a>
+                                <h4>$14.99 <del class="d-none">$20.99</del></h4>
+
+                                <div class="ratings flex-align-center">
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                </div>
+                            </div>
+                            <div class="cart flex-align-center">
+                                <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasShop" class="iconify"><iconify-icon icon="ph:handbag-light"></iconify-icon></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-6 p_card">
+
+                        <div class="img_wrapper w-100">
+                            <img class="w-100" src="./assets/images/product_img3.png" alt="404">
+
+                            <p class="d-none">Sale 50%</p>
+                            <a href="#" class="iconify"><iconify-icon icon="si:heart-line"></iconify-icon></a>
+                            <a href="#" class="iconify"><iconify-icon icon="famicons:eye-outline"></iconify-icon></a>
+                        </div>
+
+                        <div class="card_contents flex-align-center justify-content-between">
+                            <div class="description">
+                                <a href="./single-product.html">Red Tomatos</a>
+                                <h4>$14.99 <del class="d-none">$20.99</del></h4>
+
+                                <div class="ratings flex-align-center">
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                </div>
+                            </div>
+                            <div class="cart flex-align-center">
+                                <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasShop" class="iconify"><iconify-icon icon="ph:handbag-light"></iconify-icon></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-6 p_card">
+
+                        <div class="img_wrapper w-100">
+                            <img class="w-100" src="./assets/images/product_img4.png" alt="404">
+
+                            <p class="d-none">Sale 50%</p>
+                            <a href="#" class="iconify"><iconify-icon icon="si:heart-line"></iconify-icon></a>
+                            <a href="#" class="iconify"><iconify-icon icon="famicons:eye-outline"></iconify-icon></a>
+                        </div>
+
+                        <div class="card_contents flex-align-center justify-content-between">
+                            <div class="description">
+                                <a href="./single-product.html">Fresh Cauliflower</a>
+                                <h4>$14.99 <del class="d-none">$20.99</del></h4>
+
+                                <div class="ratings flex-align-center">
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                </div>
+                            </div>
+                            <div class="cart flex-align-center">
+                                <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasShop" class="iconify"><iconify-icon icon="ph:handbag-light"></iconify-icon></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-6 p_card">
+
+                        <div class="img_wrapper w-100">
+                            <img class="w-100" src="./assets/images/product_img5.png" alt="404">
+
+                            <p class="d-none">Sale 50%</p>
+                            <a href="#" class="iconify"><iconify-icon icon="si:heart-line"></iconify-icon></a>
+                            <a href="#" class="iconify"><iconify-icon icon="famicons:eye-outline"></iconify-icon></a>
+                        </div>
+
+                        <div class="card_contents flex-align-center justify-content-between">
+                            <div class="description">
+                                <a href="./single-product.html">Green Lettuce</a>
+                                <h4>$14.99 <del class="d-none">$20.99</del></h4>
+
+                                <div class="ratings flex-align-center">
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                </div>
+                            </div>
+                            <div class="cart flex-align-center">
+                                <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasShop" class="iconify"><iconify-icon icon="ph:handbag-light"></iconify-icon></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-6 p_card">
+
+                        <div class="img_wrapper w-100">
+                            <img class="w-100" src="./assets/images/product_img6.png" alt="404">
+
+                            <p class="d-none">Sale 50%</p>
+                            <a href="#" class="iconify"><iconify-icon icon="si:heart-line"></iconify-icon></a>
+                            <a href="#" class="iconify"><iconify-icon icon="famicons:eye-outline"></iconify-icon></a>
+                        </div>
+
+                        <div class="card_contents flex-align-center justify-content-between">
+                            <div class="description">
+                                <a href="./single-product.html">Green Capsicum</a>
+                                <h4>$14.99 <del class="d-none">$20.99</del></h4>
+
+                                <div class="ratings flex-align-center">
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                </div>
+                            </div>
+                            <div class="cart flex-align-center">
+                                <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasShop" class="iconify"><iconify-icon icon="ph:handbag-light"></iconify-icon></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-6 p_card">
+
+                        <div class="img_wrapper w-100">
+                            <img class="w-100" src="./assets/images/product_img7.png" alt="404">
+
+                            <p class="d-none">Sale 50%</p>
+                            <a href="#" class="iconify"><iconify-icon icon="si:heart-line"></iconify-icon></a>
+                            <a href="#" class="iconify"><iconify-icon icon="famicons:eye-outline"></iconify-icon></a>
+                        </div>
+
+                        <div class="card_contents flex-align-center justify-content-between">
+                            <div class="description">
+                                <a href="./single-product.html">Green Chilli</a>
+                                <h4>$14.99 <del class="d-none">$20.99</del></h4>
+
+                                <div class="ratings flex-align-center">
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                </div>
+                            </div>
+                            <div class="cart flex-align-center">
+                                <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasShop" class="iconify"><iconify-icon icon="ph:handbag-light"></iconify-icon></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-6 p_card">
+
+                        <div class="img_wrapper w-100">
+                            <img class="w-100" src="./assets/images/product_img8.png" alt="404">
+
+                            <p class="d-none">Sale 50%</p>
+                            <a href="#" class="iconify"><iconify-icon icon="si:heart-line"></iconify-icon></a>
+                            <a href="#" class="iconify"><iconify-icon icon="famicons:eye-outline"></iconify-icon></a>
+                        </div>
+
+                        <div class="card_contents flex-align-center justify-content-between">
+                            <div class="description">
+                                <a href="./single-product.html">Eggplant</a>
+                                <h4>$14.99 <del class="d-none">$20.99</del></h4>
+
+                                <div class="ratings flex-align-center">
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                </div>
+                            </div>
+                            <div class="cart flex-align-center">
+                                <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasShop" class="iconify"><iconify-icon icon="ph:handbag-light"></iconify-icon></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ========= products SECTION END =============== -->
+
+        <!-- ========= banner-2 SECTION START =============== -->
+        <section id="banner-2">
+            <div class="container px-3">
+                <div class="row justify-content-between g-0">
+                    <div class="d-flex banner_2_card">
+                        <div class="contents_wrapper w-50">
+                            <h3>100% Fresh Cow Milk</h3>
+                            <h5>Starting at <span>$14.99</span></h5>
+                            <a href="" class="d-inline-flex align-items-center">
+                                Shop Now
+                                <span class="iconify">
+                                    <iconify-icon icon="fluent:arrow-right-24-filled"></iconify-icon>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="d-flex banner_2_card">
+                        <div class="contents_wrapper w-50">
+                            <h5>Drink Sale</h5>
+                            <h3>Water & Soft Drink</h3>
+                            <a href="" class="d-inline-flex align-items-center">
+                                Shop Now
+                                <span class="iconify">
+                                    <iconify-icon icon="fluent:arrow-right-24-filled"></iconify-icon>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="d-flex banner_2_card">
+                        <div class="contents_wrapper w-50">
+                            <h5>Quick Breakfast</h5>
+                            <h3>100% Organic</h3>
+                            <a href="" class="d-inline-flex align-items-center">
+                                Shop Now
+                                <span class="iconify">
+                                    <iconify-icon icon="fluent:arrow-right-24-filled"></iconify-icon>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ========= banner-2 SECTION END =============== -->
+
+        <!-- ========= best-deal SECTION START =============== -->
+        <section id="best-deal">
+            <div class="container">
+                <div class="row g-0 justify-content-center">
+                    <div class="col-lg-3 img_part_1 flex-align-center justify-content-end order-2 order-lg-0">
+                        <img src="./assets/images/best_deal_img1.png" alt="">
+                    </div>
+
+                    <div class="col-lg-4 countdown order-1">
+                        <h5>Best Deals</h5>
+                        <h3>Our Special Products Deal of the Month</h3>
+
+
+                        <div class="timer d-flex justify-content-between">
+                            <div class="days time_part">
+                                <h4>00</h4>
+                                <h6>DAYS</h6>
+                            </div>
+                            <div class="hours time_part">
+                                <h4>02</h4>
+                                <h6>DAYS</h6>
+                            </div>
+                            <div class="mins time_part">
+                                <h4>18</h4>
+                                <h6>DAYS</h6>
+                            </div>
+                            <div class="secs time_part">
+                                <h4>46</h4>
+                                <h6>DAYS</h6>
+                            </div>
+                        </div>
+
+                        <a href="" class="d-inline-flex align-items-center shop-btn">
+                            Shop Now
+                            <span class="iconify">
+                                <iconify-icon icon="fluent:arrow-right-24-filled"></iconify-icon>
+                            </span>
+                        </a>
+                    </div>
+
+
+                    <div class="col-lg-3 img_part_2 d-flex align-items-end order-0 order-lg-2">
+                        <img class="" src="./assets/images/best_deal_img2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========= best-deal SECTION END =============== -->
+
+        <!-- ========= featured-products SECTION START =============== -->
+        <section id="featured-products">
+            <div class="container">
+                <div class="products_header flex-justify-center">
+                    <div class="wrapper text-center">
+                        <h4 class="title">Featured Products</h4>
+                    </div>
+                </div>
+
+                <div class="row products_contents g-0">
+                    <div class="col-lg col-6 p_card">
+
+                        <div class="img_wrapper w-100">
+                            <img class="w-100" src="./assets/images/product_img1.png" alt="404">
+
+                            <p>Sale 50%</p>
+                            <a href="#" class="iconify"><iconify-icon icon="si:heart-line"></iconify-icon></a>
+                            <a href="#" class="iconify"><iconify-icon icon="famicons:eye-outline"></iconify-icon></a>
+                        </div>
+
+                        <div class="card_contents flex-align-center justify-content-between">
+                            <div class="description">
+                                <a href="./single-product.html">Green Apple</a>
+                                <h4>$14.99 <del>$20.99</del></h4>
+
+                                <div class="ratings flex-align-center">
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                </div>
+                            </div>
+                            <div class="cart flex-align-center">
+                                <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasShop" class="iconify">
+                                    <iconify-icon icon="ph:handbag-light"></iconify-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg col-6 p_card">
+
+                        <div class="img_wrapper w-100">
+                            <img class="w-100" src="./assets/images/featured_products_img2.png" alt="404">
+
+                            <p class="d-none">Sale 50%</p>
+                            <a href="#" class="iconify"><iconify-icon icon="si:heart-line"></iconify-icon></a>
+                            <a href="#" class="iconify"><iconify-icon icon="famicons:eye-outline"></iconify-icon></a>
+                        </div>
+
+                        <div class="card_contents flex-align-center justify-content-between">
+                            <div class="description">
+                                <a href="./single-product.html">Fresh Indian Malta</a>
+                                <h4>$14.99 <del class="d-none">$20.99</del></h4>
+
+                                <div class="ratings flex-align-center">
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                </div>
+                            </div>
+                            <div class="cart flex-align-center">
+                                <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasShop" class="iconify">
+                                    <iconify-icon icon="ph:handbag-light"></iconify-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg col-6 p_card">
+
+                        <div class="img_wrapper w-100">
+                            <img class="w-100" src="./assets/images/featured_products_img3.png" alt="404">
+
+                            <p class="d-none">Sale 50%</p>
+                            <a href="#" class="iconify"><iconify-icon icon="si:heart-line"></iconify-icon></a>
+                            <a href="#" class="iconify"><iconify-icon icon="famicons:eye-outline"></iconify-icon></a>
+                        </div>
+
+                        <div class="card_contents flex-align-center justify-content-between">
+                            <div class="description">
+                                <a href="./single-product.html">Chinese Cabbage</a>
+                                <h4>$14.99 <del class="d-none">$20.99</del></h4>
+
+                                <div class="ratings flex-align-center">
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                </div>
+                            </div>
+                            <div class="cart flex-align-center">
+                                <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasShop" class="iconify">
+                                    <iconify-icon icon="ph:handbag-light"></iconify-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg col-6 p_card">
+
+                        <div class="img_wrapper w-100">
+                            <img class="w-100" src="./assets/images/product_img5.png" alt="404">
+
+                            <p class="d-none">Sale 50%</p>
+                            <a href="#" class="iconify"><iconify-icon icon="si:heart-line"></iconify-icon></a>
+                            <a href="#" class="iconify"><iconify-icon icon="famicons:eye-outline"></iconify-icon></a>
+                        </div>
+
+                        <div class="card_contents flex-align-center justify-content-between">
+                            <div class="description">
+                                <a href="./single-product.html">Green Lettuce</a>
+                                <h4>$14.99 <del class="d-none">$20.99</del></h4>
+
+                                <div class="ratings flex-align-center">
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                </div>
+                            </div>
+                            <div class="cart flex-align-center">
+                                <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasShop" class="iconify">
+                                    <iconify-icon icon="ph:handbag-light"></iconify-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg col-6 p_card">
+
+                        <div class="img_wrapper w-100">
+                            <img class="w-100" src="./assets/images/product_img8.png" alt="404">
+
+                            <p class="d-none">Sale 50%</p>
+                            <a href="#" class="iconify"><iconify-icon icon="si:heart-line"></iconify-icon></a>
+                            <a href="#" class="iconify"><iconify-icon icon="famicons:eye-outline"></iconify-icon></a>
+                        </div>
+
+                        <div class="card_contents flex-align-center justify-content-between">
+                            <div class="description">
+                                <a href="./single-product.html">Eggplant</a>
+                                <h4>$14.99 <del class="d-none">$20.99</del></h4>
+
+                                <div class="ratings flex-align-center">
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                    <span class="iconify"><iconify-icon
+                                            icon="material-symbols:star-rounded"></iconify-icon></span>
+                                </div>
+                            </div>
+                            <div class="cart flex-align-center">
+                                <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasShop" class="iconify">
+                                    <iconify-icon icon="ph:handbag-light"></iconify-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- ========= featured-products SECTION END =============== -->
+
+        <!-- ========= testimonial SECTION START =============== -->
+        <section id="testimonial">
+            <div class="container">
+                <h3>What our Clients Says</h3>
+
+                <div class="row justify-content-between g-0 px-3 px-lg-0">
+
+                    <div class="review">
+                        <div class="review_text">
+                            <span class="iconify">
+                                <iconify-icon icon="entypo:quote"></iconify-icon>
+                            </span>
+                            <p>“Aenean et nisl eget eros consectetur vestibulum vel id erat. Aliquam feugiat massa dui.
+                                Sed sagittis diam sit amet ante sodales semper. Aliquam commodo lorem laoreet ultricies
+                                ele. ”
+                            </p>
+                        </div>
+
+                        <div class="reviewer">
+                            <img src="./assets/images/testimonial_img1.png" alt="">
+                            <h5>Jenny Wilson</h5>
+                            <h6>Customer</h6>
+                        </div>
+                    </div>
+
+                    <div class="review">
+                        <div class="review_text">
+                            <span class="iconify">
+                                <iconify-icon icon="entypo:quote"></iconify-icon>
+                            </span>
+                            <p>“Aenean et nisl eget eros consectetur vestibulum vel id erat. Aliquam feugiat massa dui.
+                                Sed sagittis diam sit amet ante sodales semper. Aliquam commodo lorem laoreet ultricies
+                                ele. ”
+                            </p>
+                        </div>
+
+                        <div class="reviewer">
+                            <img src="./assets/images/testimonial_img2.png" alt="">
+                            <h5>Guy Hawkins</h5>
+                            <h6>Customer</h6>
+                        </div>
+                    </div>
+
+                    <div class="review">
+                        <div class="review_text">
+                            <span class="iconify">
+                                <iconify-icon icon="entypo:quote"></iconify-icon>
+                            </span>
+                            <p>“Aenean et nisl eget eros consectetur vestibulum vel id erat. Aliquam feugiat massa dui.
+                                Sed sagittis diam sit amet ante sodales semper. Aliquam commodo lorem laoreet ultricies
+                                ele. ”
+                            </p>
+                        </div>
+
+                        <div class="reviewer">
+                            <img src="./assets/images/testimonial_img3.png" alt="">
+                            <h5>Kathryn Murphy</h5>
+                            <h6>Customer</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="testimonial-video">
+
+            <div class="container flex-justify-center">
+                <div class="img_wrapper">
+                    <img class="img-fluid d-inline-block" src="./assets/images/testimonial_img4.png" alt="">
+                    <div class="contents_wrapper">
+                        <h6 class="d-none d-lg-block">VIDEO</h6>
+                        <h4 class="">We’re the Best Organic Farm in the World</h4>
+                        <button class="iconify"><iconify-icon icon="rivet-icons:play-solid"></iconify-icon></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ========= testimonial SECTION END =============== -->
+
+        <!-- ========= latest-blog SECTION START =============== -->
+        <section id="latest-blog">
+            <div class="container">
+                <h3>Latest News</h3>
+
+
+                <div class="row g-0 px-3 justify-content-between">
+
+                    <div class="p-4 blog_card">
+                        <div class="img_wrapper">
+                            <img class="img-fluid w-100" src="./assets/images/blog_img1.png" alt="">
+
+                            <div class="date">
+                                <h4>23</h4>
+                                <h6>JAN</h6>
+                            </div>
+                        </div>
+
+                        <h5>Curabitur porttitor orci eget neque accumsan venenatis.</h5>
+                        <p>Nulla libero lorem, euismod venenatis nibh sed, sodales dictum ex. Etiam nisi augue,
+                            malesuada et pulvinar at, posuere eu neque.</p>
+                        <a href="" class="d-inline-flex align-items-center">
+                            Read More
+                            <span class="iconify">
+                                <iconify-icon icon="fluent:arrow-right-24-filled"></iconify-icon>
+                            </span>
+                        </a>
+                    </div>
+
+
+
+                    <div class="p-4 blog_card">
+                        <div class="img_wrapper">
+                            <img class="img-fluid w-100" src="./assets/images/blog_img2.png" alt="">
+
+                            <div class="date">
+                                <h4>23</h4>
+                                <h6>JAN</h6>
+                            </div>
+                        </div>
+
+                        <h5>Curabitur porttitor orci eget neque accumsan venenatis.</h5>
+                        <p>Nulla libero lorem, euismod venenatis nibh sed, sodales dictum ex. Etiam nisi augue,
+                            malesuada et pulvinar at, posuere eu neque.</p>
+                        <a href="" class="d-inline-flex align-items-center">
+                            Read More
+                            <span class="iconify">
+                                <iconify-icon icon="fluent:arrow-right-24-filled"></iconify-icon>
+                            </span>
+                        </a>
+                    </div>
+
+
+                    <div class="p-4 blog_card">
+                        <div class="img_wrapper">
+                            <img class="img-fluid w-100" src="./assets/images/blog_img3.png" alt="">
+
+                            <div class="date">
+                                <h4>23</h4>
+                                <h6>JAN</h6>
+                            </div>
+                        </div>
+
+                        <h5>Curabitur porttitor orci eget neque accumsan venenatis.</h5>
+                        <p>Nulla libero lorem, euismod venenatis nibh sed, sodales dictum ex. Etiam nisi augue,
+                            malesuada et pulvinar at, posuere eu neque.</p>
+                        <a href="" class="d-inline-flex align-items-center">
+                            Read More
+                            <span class="iconify">
+                                <iconify-icon icon="fluent:arrow-right-24-filled"></iconify-icon>
+                            </span>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- ========= latest-blog SECTION END =============== -->
+    </main>
+
+    <footer>
+        <!-- ========= newsletter SECTION START =============== -->
+        <section id="newsletter">
+            <div class="container">
+                <div class="row g-0 px-3">
+                    <div class="col-lg-3 text-center text-lg-start">
+
+                        <a class="brand_logo navbar-brand" href="#">
+                            <img src="./assets/images/brand_logo.png" alt="">
+                            Ecobazar
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 contents order-2 order-lg-1 text-center text-lg-start">
+                        <div class="wrapper">
+                            <h4>Subscribe our Newsletter</h4>
+                            <p>Pellentesque eu nibh eget mauris congue mattis matti.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 subscription order-1 order-lg-2">
+                        <form action="">
+                            <input type="text" placeholder="Your email address">
+                            <button>Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========= newsletter SECTION END =============== -->
+
+        <!-- ========= main-footer SECTION START =============== -->
+        <section id="main-footer">
+            <div class="container">
+                <div class="row g-0 footer_row">
+                    <div class="col-lg-3 company_detail text-center text-lg-start">
+                        <h4>About Shopery</h4>
+                        <p>Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna
+                            congue nec.</p>
+                        <div class="flex-align-center justify-content-center justify-content-lg-start contact_link">
+                            <span class="number">(219) 555-0114</span>
+                            <span class="or">or</span>
+                            <span class="email">Proxy@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-6 flex-justify-center account">
+                        <ul>
+                            <li>My account</li>
+                            <li><a href="">My account</a></li>
+                            <li><a href="">Order History</a></li>
+                            <li><a href="">Shopping Cart</a></li>
+                            <li><a href="">Wishlist</a></li>
+                            <li><a href="">Settings</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-6 flex-justify-center helps">
+                        <ul>
+                            <li>Helps</li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Faqs</a></li>
+                            <li><a href="">Terms & Condition</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-6 flex-justify-center proxy">
+                        <ul>
+                            <li>Proxy</li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Shop</a></li>
+                            <li><a href="">Product</a></li>
+                            <li><a href="">Products Details</a></li>
+                            <li><a href="">Track Order</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 text-center text-lg-start instagram">
+                        <h4>Instagram</h4>
+                        <div class="img_container">
+
+
+                            <div class="img_wrapper">
+                                <img class="img-fluid w-100" src="./assets/images/main_footer_img1.png" alt="">
+                            </div>
+
+
+                            <div class="img_wrapper">
+                                <img class="img-fluid w-100" src="./assets/images/main_footer_img2.png" alt="">
+                            </div>
+
+
+                            <div class="img_wrapper">
+                                <img class="img-fluid w-100" src="./assets/images/main_footer_img3.png" alt="">
+                            </div>
+
+
+                            <div class="img_wrapper">
+                                <img class="img-fluid w-100" src="./assets/images/main_footer_img4.png" alt="">
+                            </div>
+
+                            <div class="img_wrapper">
+                                <img class="img-fluid w-100" src="./assets/images/main_footer_img5.png" alt="">
+                            </div>
+
+
+                            <div class="img_wrapper">
+                                <img class="img-fluid w-100" src="./assets/images/main_footer_img6.png" alt="">
+                            </div>
+
+
+                            <div class="img_wrapper">
+                                <img class="img-fluid w-100" src="./assets/images/main_footer_img7.png" alt="">
+                            </div>
+
+
+                            <div class="img_wrapper">
+                                <img class="img-fluid w-100" src="./assets/images/main_footer_img8.png" alt="">
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-0 align-items-center copyright_row">
+
+                    <ul class="col-lg-3 social_icons d-flex justify-content-center justify-content-lg-start">
+                        <li class="flex-align-center">
+                            <a href="" class="iconify">
+                                <iconify-icon icon="basil:facebook-solid"></iconify-icon>
+                            </a>
+                        </li>
+                        <li class="flex-align-center">
+                            <a href="" class="iconify">
+                                <iconify-icon icon="pajamas:twitter"></iconify-icon>
+                            </a>
+                        </li>
+                        <li class="flex-align-center">
+                            <a href="" class="iconify">
+                                <iconify-icon icon="jam:pinterest"></iconify-icon>
+                            </a>
+                        </li>
+                        <li class="flex-align-center">
+                            <a href="" class="iconify">
+                                <iconify-icon icon="akar-icons:instagram-fill"></iconify-icon>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="col-lg-6 copyright text-center">
+                        <p>Shopery eCommerce © 2021. All Rights Reserved</p>
+                    </div>
+
+                    <div class="col-lg-3 payment_icon text-center text-lg-end">
+                        <img class="img-fluid" src="./assets/images/main_footer_img9.png" alt="">
+                        <img class="img-fluid" src="./assets/images/main_footer_img10.png" alt="">
+                        <img class="img-fluid" src="./assets/images/main_footer_img11.png" alt="">
+                        <img class="img-fluid" src="./assets/images/main_footer_img12.png" alt="">
+                        <img class="img-fluid" src="./assets/images/main_footer_img13.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <img src="./assets/images/main_footer_vector1.png" alt="" class="vector_1 d-none d-lg-inline-block">
+            <img src="./assets/images/main_footer_vector2.png" alt="" class="vector_2 d-none d-lg-inline-block">
+        </section>
+        <!-- ========= main-footer SECTION END =============== -->
+    </footer>
+    <!--                            HOME PAGE END                                -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- other -->
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/iconify-icon.min.js"></script>
+    <!-- custom js -->
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+Eco bazar project ---------
+
+4 no. Home Page (11)
+10 no. Single Page (4)
+15 no. Cart Page (1)
+16 no. Checkout Page (2)
+17 no. Blog Page (2)
+                 20 parts total
+
+
+Page navigation------
+1. Home page--Initial
+2. Single Product page-- Click over any Product
+3. Shopping Cart page-- From middle header icon group cart link, from cart pop up-- Go To Cart......or,...........From any product cart icon , from cart pop up -- Go To Cart
+4. Checkout page-- From middle header icon group cart link, from cart pop up-- Go To Cart..or,......From any product cart icon , from cart pop up -- Checkout... or, ...From Shopping cart--Procceed to Checkout.
+5. Blog page-- From bottom header navigation bar --Blog
+
+
+reminder: always learn first not copy paste ...
+---------------------------------------------------------------------------------------------------------------------------------

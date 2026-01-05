@@ -1,0 +1,1802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <!-- others -->
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                             BLOG PAGE START                             -->
+    <header>
+        <!-- ==== shopping-card offcanvas right start ====== -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasShop" aria-labelledby="offcanvasExampleLabel">
+
+            <div class="offcanvas-header p-0 pb-3">
+                <button class="close_button" data-bs-dismiss="offcanvas">
+                    <iconify-icon icon="gg:close"></iconify-icon>
+                </button>
+                <h4 class="offcanvas-title" id="offcanvasExampleLabel">Shopping Card <span>(2)</span> </h4>
+            </div>
+
+            <div class="offcanvas-body p-0">
+
+                <div class="cart_product flex-align-center">
+                    <div class="img_wrapper">
+                        <img src="./assets/images/mobile_header_img1.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="contents_wrapper ms-2">
+                        <h6>Fresh Indian Orange</h6>
+
+
+                        <div class="count_grp flex-align-center">
+                            <h5><span class="weight">1</span> kg x <span class="pricing">12.00</span></h5>
+                        </div>
+                    </div>
+
+                    <div class="btn_wrapper ms-auto flex-align-center">
+                        <button class="iconify" type="button">
+                            <iconify-icon icon="radix-icons:cross-2"></iconify-icon>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="cart_product flex-align-center">
+                    <div class="img_wrapper">
+                        <img src="./assets/images/mobile_header_img2.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="contents_wrapper ms-2">
+                        <h6>Green Apple</h6>
+
+                        <div class="count_grp flex-align-center">
+                            <h5><span class="weight">1</span> kg x <span class="pricing">14.00</span></h5>
+                        </div>
+                    </div>
+
+                    <div class="btn_wrapper ms-auto flex-align-center">
+                        <button class="iconify" type="button">
+                            <iconify-icon icon="radix-icons:cross-2"></iconify-icon>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="offcanvas-footer">
+
+                <div class="total_count flex-align-center justify-content-between my-4">
+                    <h6>2 Product</h6>
+                    <h5>$26.00</h5>
+                </div>
+
+                <div class="button_grp">
+                    <a href="./checkout.html" class="checkout">Checkout</a>
+                    <a href="./shopping-cart.html" class="cart">Go To Cart</a>
+                </div>
+
+            </div>
+        </div>
+        <!-- ==== shopping-card offcanvas right end ====== -->
+
+        <!-- ========= top header SECTION START =============== -->
+        <section id="top-header">
+            <div class="container">
+                <div class="row g-0 align-items-center">
+                    <div class="location col-lg-6">
+                        <p class="flex-align-center">
+                            <span class="iconify"><iconify-icon icon="ep:location"></iconify-icon></span>
+                            Store Location: Lincoln- 344, Illinois, Chicago, USA
+                        </p>
+                    </div>
+
+                    <div class="utilities col-lg-6 d-flex justify-content-end">
+
+
+
+                        <div class="translator d-none d-lg-block">
+                            <select name="translator" class="">
+                                <option value="">Eng</option>
+                                <option value="">Ban</option>
+                            </select>
+
+
+                            <span class="iconify arrow">
+                                <iconify-icon class="translate_arrow" icon="ep:arrow-down-bold"></iconify-icon>
+                                <iconify-icon class="translate_arrow" icon="ep:arrow-up-bold"
+                                    style="display: none;"></iconify-icon>
+                            </span>
+                        </div>
+
+
+
+                        <div class="currency_convert d-none d-lg-block">
+                            <select name="currency_convert">
+                                <option value="">USD</option>
+                                <option value="">BDT</option>
+                            </select>
+
+
+                            <span class="iconify arrow">
+                                <iconify-icon class="currency_arrow" icon="ep:arrow-down-bold"></iconify-icon>
+                                <iconify-icon class="currency_arrow" icon="ep:arrow-up-bold"
+                                    style="display: none;"></iconify-icon>
+                            </span>
+                        </div>
+
+
+                        <span class="sign_opt d-none d-lg-block">
+                            <a href="">Sign In</a> / <a href="">Sign Up</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========= top header SECTION END =============== -->
+
+        <!-- ========= middle header SECTION START =============== -->
+        <section id="middle-header" class="d-none d-lg-block">
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="branding col-lg-3">
+                        <a class="brand_logo navbar-brand" href="#">
+                            <img src="./assets/images/brand_logo.png" alt="">
+                            Ecobazar
+                        </a>
+                    </div>
+
+                    <div class="search_bar col-lg-6">
+                        <form class="search_form" role="search">
+                            <input id="input_nav" class="search_input" type="text" placeholder="Search" />
+                            <label for="input_nav" class="search_icon iconify"><iconify-icon
+                                    icon="iconamoon:search"></iconify-icon></label>
+                            <button class="search_btn" type="submit">Search</button>
+                        </form>
+                    </div>
+
+                    <div class="cart col-lg-3 d-flex justify-content-end">
+                        <ul class="icon_group d-flex">
+
+                            <li class="wishlist">
+                                <a class="wishlist_icon iconify" aria-current="page" href="#">
+                                    <iconify-icon icon="si:heart-line"></iconify-icon>
+                                </a>
+                            </li>
+
+                            <li class="shopping_cart">
+                                <div class="cart_wrapper">
+                                    <a class="cart_icon iconify" aria-current="page" data-bs-toggle="offcanvas"
+                                        href="#offcanvasShop">
+                                        <iconify-icon icon="ph:handbag-light"></iconify-icon>
+                                    </a>
+                                    <p class="item_count">2</p>
+                                </div>
+
+                                <div class="cart_contents">
+                                    <p>Shopping cart:</p>
+                                    <h4>$57.00</h4>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </section>
+        <!-- ========= middle header SECTION END =============== -->
+
+        <!-- ========= bottom header SECTION START =============== -->
+        <section id="bottom-header" class="d-none d-lg-block">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-lg-8 pages">
+                        <ul class="page_list">
+                            <li class="categories">
+                                <button class="flex-align-center">
+                                    <span class="iconify">
+                                        <iconify-icon icon="iconoir:menu"></iconify-icon>
+                                    </span>
+                                    All Categories
+                                    <span class="iconify">
+                                        <iconify-icon class="category_arrow" icon="iconamoon:arrow-down-2-light">
+                                        </iconify-icon>
+                                        <iconify-icon class="category_arrow" icon="iconamoon:arrow-up-2-light"
+                                            style="display: none;">
+                                        </iconify-icon>
+                                    </span>
+                                </button>
+                                <ul class="category_list">
+                                    <li>
+                                        <a href="#" class="flex-align-center">
+                                            <span class="iconify">
+                                                <iconify-icon icon="fluent:food-apple-20-regular"></iconify-icon>
+                                            </span>
+                                            Fresh Fruit
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="flex-align-center">
+                                            <span class="iconify">
+                                                <iconify-icon icon="carbon:fruit-bowl"></iconify-icon>
+                                            </span>
+                                            Vegetables
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="flex-align-center">
+                                            <span class="iconify">
+                                                <iconify-icon
+                                                    icon="fluent-emoji-high-contrast:cut-of-meat"></iconify-icon>
+                                            </span>
+                                            Fish & Meat
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="flex-align-center">
+                                            <span class="iconify">
+                                                <iconify-icon icon="cbi:eggs"></iconify-icon>
+                                            </span>
+                                            Eggs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="flex-align-center">
+                                            <span class="iconify">
+                                                <iconify-icon icon="streamline-ultimate:seasoning-food"></iconify-icon>
+                                            </span>
+                                            Spice
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="flex-align-center">
+                                            <span class="iconify">
+                                                <iconify-icon icon="tdesign:add"></iconify-icon>
+                                            </span>
+                                            View All Category
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class=""><a href="./index.html">Home</a></li>
+                            <li class=""><a href="#">Shop</a></li>
+                            <li class="active-page"><a href="./blog.html">Blog</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 contact d-flex justify-content-end">
+                        <p class="flex-align-center contact_num"><span class="iconify"><iconify-icon
+                                    icon="ph:phone-call"></iconify-icon></span>(219) 555-0114</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========= bottom header SECTION END =============== -->
+
+        <!-- ========= mobile header SECTION START =============== -->
+        <section id="mobile-header" class="d-block d-lg-none">
+            <div class="container px-2">
+                <div class="row align-items-center g-0">
+
+                    <div class="col-1 mobile_menu">
+                        <!-- mobile-menu offcanvas left start-->
+                        <button class="flex-align-center menu_icon" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBothOptions">
+                            <span class="iconify"><iconify-icon icon="gg:menu-left-alt"></iconify-icon></span>
+                        </button>
+
+                        <div class="offcanvas offcanvas-start w-75" data-bs-scroll="true" tabindex="-1"
+                            id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+
+                            <div class="offcanvas-header p-0 pt-3">
+                                <button class="close_button" data-bs-dismiss="offcanvas">
+                                    <iconify-icon icon="gg:close"></iconify-icon>
+                                </button>
+                            </div>
+
+                            <div class="offcanvas-body p-0">
+                                <!-- nav & tabs start -->
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" data-bs-toggle="tab"
+                                            data-bs-target="#home-tab-pane">All Categories</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" data-bs-toggle="tab"
+                                            data-bs-target="#profile-tab-pane">Pages</button>
+                                    </li>
+
+                                </ul>
+
+                                <div class="tab-content" id="myTabContent">
+
+                                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                                        aria-labelledby="home-tab" tabindex="0">
+
+                                        <ul class="category_list">
+                                            <li>
+                                                <a href="#" class="flex-align-center">
+                                                    <span class="iconify">
+                                                        <iconify-icon
+                                                            icon="fluent:food-apple-20-regular"></iconify-icon>
+                                                    </span>
+                                                    Fresh Fruit
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="flex-align-center">
+                                                    <span class="iconify">
+                                                        <iconify-icon icon="carbon:fruit-bowl"></iconify-icon>
+                                                    </span>
+                                                    Vegetables
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="flex-align-center">
+                                                    <span class="iconify">
+                                                        <iconify-icon
+                                                            icon="fluent-emoji-high-contrast:cut-of-meat"></iconify-icon>
+                                                    </span>
+                                                    Fish & Meat
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="flex-align-center">
+                                                    <span class="iconify">
+                                                        <iconify-icon icon="cbi:eggs"></iconify-icon>
+                                                    </span>
+                                                    Eggs
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="flex-align-center">
+                                                    <span class="iconify">
+                                                        <iconify-icon
+                                                            icon="streamline-ultimate:seasoning-food"></iconify-icon>
+                                                    </span>
+                                                    Spice
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="flex-align-center">
+                                                    <span class="iconify">
+                                                        <iconify-icon icon="tdesign:add"></iconify-icon>
+                                                    </span>
+                                                    View All Category
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
+                                        aria-labelledby="profile-tab" tabindex="0">
+                                        <ul class="mobile_pages">
+                                            <li>
+                                                <a href="#">Home</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Shop</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Blog</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">About Us</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Contact Us</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <!-- nav & tabs end -->
+                            </div>
+
+                        </div>
+                        <!-- mobile-menu offcanvas left end-->
+                    </div>
+
+
+                    <div class="col-7 flex-align-center justify-content-center">
+                        <a class="brand_logo navbar-brand" href="#">
+                            <img src="./assets/images/brand_logo.png" alt="">
+                            Ecobazar
+                        </a>
+                    </div>
+
+                    <div class="col-4 mobile_icons">
+
+                        <ul class="icon_group d-flex justify-content-end">
+
+                            <li>
+                                <!-- search-bar offcanvas top start -->
+                                <a class="search_icon iconify" data-bs-toggle="offcanvas" href="#offcanvasTop">
+                                    <iconify-icon icon="si:search-line"></iconify-icon>
+                                </a>
+
+                                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop">
+                                    <div class="offcanvas-header pe-4">
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="offcanvas-body">
+
+                                        <div class="search_bar">
+                                            <form class="search_form" role="search">
+                                                <input id="input_offcanvas" class="search_input" type="text"
+                                                    placeholder="Search" />
+                                                <label for="input_offcanvas" class="search_icon iconify">
+                                                    <iconify-icon icon="iconamoon:search"></iconify-icon>
+                                                </label>
+                                                <button class="search_btn" type="submit">Search</button>
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- search-bar offcanvas top end -->
+                            </li>
+
+                            <li class="shopping_cart">
+                                <div class="cart_wrapper">
+                                    <a class="cart_icon iconify" aria-current="page" data-bs-toggle="offcanvas"
+                                        href="#offcanvasShop">
+                                        <iconify-icon icon="ph:handbag-light"></iconify-icon>
+                                    </a>
+                                    <p class="item_count">2</p>
+                                </div>
+
+                            </li>
+
+                            <li class="flex-align-center">
+                                <a class="iconify" aria-current="page" href="#">
+                                    <iconify-icon icon="fluent:phone-key-20-regular"></iconify-icon>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ========= mobile header SECTION END =============== -->
+    </header>
+
+    <main>
+        <!-- ========= breadcrumbs SECTION START =============== -->
+        <div id="breadcrumbs" class="afterHeadingSection">
+            <div class="container">
+                <ul class="location_list">
+                    <li class="flex-align-center">
+                        <a href="" class="iconify"><iconify-icon icon="bitcoin-icons:home-outline"></iconify-icon></a>
+                    </li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+        </div>
+        <!-- ========= breadcrumbs SECTION END =============== -->
+
+        <!-- ========= blog SECTION START =============== -->
+        <section id="blog">
+            <div class="container">
+                <!-- ==== blog_top Part Start ====== -->
+                <div class="row blog_top align-items-center g-0">
+
+                    <div class="col-lg-4 col-4 filter_btn">
+
+                        <!-- desktop button -->
+                        <button class="main_btn d-none d-lg-flex align-items-center" data-bs-toggle="collapse"
+                            data-bs-target="#desktopFilter">
+                            Filter
+                            <span class="iconify">
+                                <iconify-icon icon="lets-icons:filter-big"></iconify-icon>
+                            </span>
+                        </button>
+
+                        <!-- mobile button -->
+                        <button class="main_btn flex-align-center d-lg-none" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasFilter">
+                            Filter
+                            <span class="iconify">
+                                <iconify-icon icon="lets-icons:filter-big"></iconify-icon>
+                            </span>
+                        </button>
+
+
+                        <!-- ==== filter offcanvas left Part Start ====== -->
+
+                        <div class="offcanvas offcanvas-start w-75 d-block d-lg-none" tabindex="-1" id="offcanvasFilter"
+                            aria-labelledby="offcanvasTopLabel">
+
+                            <div class="offcanvas-header p-0">
+                                <button class="close_button" data-bs-dismiss="offcanvas">
+                                    <iconify-icon icon="gg:close"></iconify-icon>
+                                </button>
+                            </div>
+
+                            <div class="offcanvas-body px-0">
+
+                                <div class="filter">
+
+                                    <div class="toggle_wrapper">
+
+                                        <!-- ==== search bar Part Start ====== -->
+                                        <div class="search_bar filter_by px-3">
+                                            <form class="search_form" role="search">
+
+                                                <input id="input_blog" class="search_input" type="text"
+                                                    placeholder="Search" />
+
+                                                <label for="input_blog" class="search_icon iconify">
+                                                    <iconify-icon icon="iconamoon:search"></iconify-icon>
+                                                </label>
+
+                                                <button class="close_btn iconify" type="text">
+                                                    <iconify-icon icon="iconamoon:close-light"></iconify-icon>
+                                                </button>
+
+                                            </form>
+                                        </div>
+                                        <!-- ==== search bar Part End ====== -->
+
+                                        <!-- ==== category_filter Part Start ====== -->
+                                        <div class="category_filter filter_by px-3">
+
+                                            <h4 class="title">Top Categories</h4>
+
+
+
+                                            <div class="heading flex-align-center justify-content-between">
+                                                <h6>Fresh Fruit</h6>
+                                                <p>(134)</p>
+                                            </div>
+
+
+                                            <div class="heading flex-align-center justify-content-between">
+                                                <h6>Vegetables</h6>
+                                                <p>(150)</p>
+                                            </div>
+
+
+                                            <div class="heading flex-align-center justify-content-between">
+                                                <h6>cooking</h6>
+                                                <p>(54)</p>
+                                            </div>
+
+
+                                            <div class="heading flex-align-center justify-content-between">
+                                                <h6>Snacks</h6>
+                                                <p>(47)</p>
+                                            </div>
+
+
+                                            <div class="heading flex-align-center justify-content-between">
+                                                <h6>Beverages</h6>
+                                                <p>(43)</p>
+                                            </div>
+
+
+                                            <div class="heading flex-align-center justify-content-between">
+                                                <h6>Beauty & health</h6>
+                                                <p>(38)</p>
+                                            </div>
+
+
+                                            <div class="heading flex-align-center justify-content-between">
+                                                <h6>Bread & Bakery</h6>
+                                                <p>(15)</p>
+                                            </div>
+
+
+
+                                        </div>
+                                        <!-- ==== category_filter Part End ====== -->
+
+                                        <!-- ==== tag_filter Part Start ====== -->
+                                        <div class="tag_filter filter_by px-3">
+
+                                            <h4 class="title">Popular Tag</h4>
+
+                                            <div class="tag_wrapper">
+
+                                                <h6 class="tag">Healthy</h6>
+
+                                                <h6 class="tag">Low Fat</h6>
+
+                                                <h6 class="tag">Vegetarian</h6>
+
+                                                <h6 class="tag">Bread</h6>
+
+                                                <h6 class="tag">Kid Foods</h6>
+
+                                                <h6 class="tag">Vitamins</h6>
+
+                                                <h6 class="tag">Snacks</h6>
+
+                                                <h6 class="tag">Tiffin</h6>
+
+                                                <h6 class="tag">Meat</h6>
+
+                                                <h6 class="tag">Launch</h6>
+
+                                                <h6 class="tag">Dinner</h6>
+
+                                            </div>
+                                        </div>
+                                        <!-- ==== tag_filter Part End ====== -->
+
+                                        <!-- ==== small_gallery Part Start ====== -->
+                                        <div class="small_gallery filter_by px-3">
+
+                                            <h4 class="title">Our Gallery</h4>
+
+                                            <div class="gallery_wrapper">
+
+                                                <img src="./assets/images/blog_main_img1.png" alt="">
+
+                                                <img class="img-fluid" src="./assets/images/blog_main_img2.png" alt="">
+
+                                                <img class="img-fluid" src="./assets/images/blog_main_img3.png" alt="">
+
+                                                <img class="img-fluid" src="./assets/images/blog_main_img4.png" alt="">
+
+
+                                                <img class="img-fluid" src="./assets/images/blog_main_img5.png" alt="">
+
+                                                <img class="img-fluid" src="./assets/images/blog_main_img6.png" alt="">
+
+                                                <img class="img-fluid" src="./assets/images/blog_main_img7.png" alt="">
+
+                                                <img class="img-fluid" src="./assets/images/blog_main_img8.png" alt="">
+
+                                            </div>
+                                        </div>
+                                        <!-- ==== small_gallery Part End ====== -->
+
+                                        <!-- ==== small_blog Part Start ====== -->
+                                        <div class="small_blog filter_by px-3">
+
+                                            <h4 class="title">Recently Added</h4>
+
+                                            <div class="post_wrapper flex-align-center">
+                                                <div class="img_wrapper">
+                                                    <img class="img-fluid" src="./assets/images/blog_main_img9.png"
+                                                        alt="">
+                                                </div>
+                                                <div class="contents_wrapper">
+                                                    <a href="">Curabitur porttitor orci eget nequ accumsan.</a>
+                                                    <div class="upload_time flex-align-center">
+                                                        <span class="iconify date_icon">
+                                                            <iconify-icon icon="formkit:date"></iconify-icon>
+                                                        </span>
+                                                        <p>Apr 25, 2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="post_wrapper flex-align-center">
+                                                <div class="img_wrapper">
+                                                    <img class="img-fluid" src="./assets/images/blog_main_img10.png"
+                                                        alt="">
+                                                </div>
+                                                <div class="contents_wrapper">
+                                                    <a href="">Donec mattis arcu faucibus suscipit viverra.</a>
+                                                    <div class="upload_time flex-align-center">
+                                                        <span class="iconify date_icon">
+                                                            <iconify-icon icon="formkit:date"></iconify-icon>
+                                                        </span>
+                                                        <p>Apr 25, 2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="post_wrapper flex-align-center">
+                                                <div class="img_wrapper">
+                                                    <img class="img-fluid" src="./assets/images/blog_main_img11.png"
+                                                        alt="">
+                                                </div>
+                                                <div class="contents_wrapper">
+                                                    <a href="">Quisque posuere tempus rutrum. Integer velit ex.</a>
+                                                    <div class="upload_time flex-align-center">
+                                                        <span class="iconify date_icon">
+                                                            <iconify-icon icon="formkit:date"></iconify-icon>
+                                                        </span>
+                                                        <p>Apr 25, 2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- ==== small_blog Part End ====== -->
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- ==== filter offcanvas left Part End ====== -->
+                    </div>
+
+                    <div
+                        class="col-lg-4 col-8 sort flex-align-center justify-content-end justify-content-lg-start ps-lg-4">
+                        <p class="sort_by">Sort by:</p>
+
+                        <div class="sort_list">
+
+
+                            <ul class="list">
+                                <li><button>Newest Arrivals</button></li>
+
+                                <li><button>Top Rated</button></li>
+
+                                <li><button>Best Selling</button></li>
+                            </ul>
+
+                            <button class="select flex-align-center">
+                                Latest
+                                <span class="iconify justify-content-center">
+                                    <iconify-icon class="select_arrow"
+                                        icon="iconamoon:arrow-down-2-light"></iconify-icon>
+                                    <iconify-icon class="select_arrow" icon="iconamoon:arrow-up-2-light"
+                                        style="display: none;"></iconify-icon>
+                                </span>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 result_count text-end mt-4 m-lg-0">
+                        <p>
+                            <span>52</span>
+                            Results Found
+                        </p>
+                    </div>
+                </div>
+                <!-- ==== blog_top Part End ====== -->
+
+                <!-- ==== blog_main Part Start ====== -->
+                <div class="row blog_main g-0">
+
+                    <div class="col-lg-4 filter d-none d-lg-block">
+
+                        <div class="toggle_wrapper collapse show" id="desktopFilter">
+
+                            <!-- ==== search bar Part Start ====== -->
+                            <div class="search_bar filter_by">
+                                <form class="search_form" role="search">
+
+                                    <input id="input_blog" class="search_input" type="text" placeholder="Search" />
+
+                                    <label for="input_blog" class="search_icon iconify">
+                                        <iconify-icon icon="iconamoon:search"></iconify-icon>
+                                    </label>
+
+                                    <button class="close_btn iconify" type="text">
+                                        <iconify-icon icon="iconamoon:close-light"></iconify-icon>
+                                    </button>
+
+                                </form>
+                            </div>
+                            <!-- ==== search bar Part End ====== -->
+
+                            <!-- ==== category_filter Part Start ====== -->
+                            <div class="category_filter filter_by">
+
+                                <h4 class="title">Top Categories</h4>
+
+
+
+                                <div class="heading flex-align-center justify-content-between">
+                                    <h6>Fresh Fruit</h6>
+                                    <p>(134)</p>
+                                </div>
+
+
+                                <div class="heading flex-align-center justify-content-between">
+                                    <h6>Vegetables</h6>
+                                    <p>(150)</p>
+                                </div>
+
+
+                                <div class="heading flex-align-center justify-content-between">
+                                    <h6>cooking</h6>
+                                    <p>(54)</p>
+                                </div>
+
+
+                                <div class="heading flex-align-center justify-content-between">
+                                    <h6>Snacks</h6>
+                                    <p>(47)</p>
+                                </div>
+
+
+                                <div class="heading flex-align-center justify-content-between">
+                                    <h6>Beverages</h6>
+                                    <p>(43)</p>
+                                </div>
+
+
+                                <div class="heading flex-align-center justify-content-between">
+                                    <h6>Beauty & health</h6>
+                                    <p>(38)</p>
+                                </div>
+
+
+                                <div class="heading flex-align-center justify-content-between">
+                                    <h6>Bread & Bakery</h6>
+                                    <p>(15)</p>
+                                </div>
+
+
+
+                            </div>
+                            <!-- ==== category_filter Part End ====== -->
+
+                            <!-- ==== tag_filter Part Start ====== -->
+                            <div class="tag_filter filter_by">
+
+                                <h4 class="title">Popular Tag</h4>
+
+                                <div class="tag_wrapper">
+
+                                    <h6 class="tag">Healthy</h6>
+
+                                    <h6 class="tag">Low Fat</h6>
+
+                                    <h6 class="tag">Vegetarian</h6>
+
+                                    <h6 class="tag">Bread</h6>
+
+                                    <h6 class="tag">Kid Foods</h6>
+
+                                    <h6 class="tag">Vitamins</h6>
+
+                                    <h6 class="tag">Snacks</h6>
+
+                                    <h6 class="tag">Tiffin</h6>
+
+                                    <h6 class="tag">Meat</h6>
+
+                                    <h6 class="tag">Launch</h6>
+
+                                    <h6 class="tag">Dinner</h6>
+
+                                </div>
+                            </div>
+                            <!-- ==== tag_filter Part End ====== -->
+
+                            <!-- ==== small_gallery Part Start ====== -->
+                            <div class="small_gallery filter_by">
+
+                                <h4 class="title">Our Gallery</h4>
+
+                                <div class="gallery_wrapper">
+
+                                    <img src="./assets/images/blog_main_img1.png" alt="">
+
+                                    <img class="img-fluid" src="./assets/images/blog_main_img2.png" alt="">
+
+                                    <img class="img-fluid" src="./assets/images/blog_main_img3.png" alt="">
+
+                                    <img class="img-fluid" src="./assets/images/blog_main_img4.png" alt="">
+
+
+                                    <img class="img-fluid" src="./assets/images/blog_main_img5.png" alt="">
+
+                                    <img class="img-fluid" src="./assets/images/blog_main_img6.png" alt="">
+
+                                    <img class="img-fluid" src="./assets/images/blog_main_img7.png" alt="">
+
+                                    <img class="img-fluid" src="./assets/images/blog_main_img8.png" alt="">
+
+                                </div>
+                            </div>
+                            <!-- ==== small_gallery Part End ====== -->
+
+                            <!-- ==== small_blog Part Start ====== -->
+                            <div class="small_blog filter_by">
+
+                                <h4 class="title">Recently Added</h4>
+
+                                <div class="post_wrapper flex-align-center">
+                                    <div class="img_wrapper">
+                                        <img class="img-fluid" src="./assets/images/blog_main_img9.png" alt="">
+                                    </div>
+                                    <div class="contents_wrapper">
+                                        <a href="">Curabitur porttitor orci eget nequ accumsan.</a>
+                                        <div class="upload_time flex-align-center">
+                                            <span class="iconify date_icon">
+                                                <iconify-icon icon="formkit:date"></iconify-icon>
+                                            </span>
+                                            <p>Apr 25, 2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="post_wrapper flex-align-center">
+                                    <div class="img_wrapper">
+                                        <img class="img-fluid" src="./assets/images/blog_main_img10.png" alt="">
+                                    </div>
+                                    <div class="contents_wrapper">
+                                        <a href="">Donec mattis arcu faucibus suscipit viverra.</a>
+                                        <div class="upload_time flex-align-center">
+                                            <span class="iconify date_icon">
+                                                <iconify-icon icon="formkit:date"></iconify-icon>
+                                            </span>
+                                            <p>Apr 25, 2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="post_wrapper flex-align-center">
+                                    <div class="img_wrapper">
+                                        <img class="img-fluid" src="./assets/images/blog_main_img11.png" alt="">
+                                    </div>
+                                    <div class="contents_wrapper">
+                                        <a href="">Quisque posuere tempus rutrum. Integer velit ex.</a>
+                                        <div class="upload_time flex-align-center">
+                                            <span class="iconify date_icon">
+                                                <iconify-icon icon="formkit:date"></iconify-icon>
+                                            </span>
+                                            <p>Apr 25, 2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- ==== small_blog Part End ====== -->
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-8 blogs ps-lg-4">
+
+
+                        <div class="blog_card">
+
+                            <div class="img_wrapper">
+
+                                <img class="img-fluid" src="./assets/images/blog_main_img12.png" alt="">
+
+                                <div class="date">
+                                    <h4>18</h4>
+                                    <p>NOV</p>
+                                </div>
+
+                            </div>
+
+                            <div class="contents_wrapper">
+
+                                <div class="info flex-align-center flex-wrap">
+
+                                    <h6 class="flex-align-center">
+                                        <span class="iconify">
+                                            <iconify-icon icon="mdi:tag-outline"></iconify-icon>
+                                        </span>
+                                        Food
+                                    </h6>
+
+                                    <h6 class="flex-align-center">
+                                        <span class="iconify">
+                                            <iconify-icon icon="mdi:shield-crown-outline"></iconify-icon>
+                                        </span>
+                                        <span class="center">
+                                            By&nbsp;
+                                        </span>
+                                        Admin
+                                    </h6>
+
+                                    <h6
+                                        class="flex-align-center justify-content-center justify-content-lg-start comments">
+                                        <span class="iconify">
+                                            <iconify-icon icon="ph:chat-centered"></iconify-icon>
+                                        </span>
+                                        65 Comments
+                                    </h6>
+
+                                </div>
+
+                                <h4>Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</h4>
+
+                                <a class="d-inline-flex align-items-center" href="">
+                                    Read More
+                                    <span class="iconify">
+                                        <iconify-icon icon="fluent:arrow-right-24-filled"></iconify-icon>
+                                    </span>
+                                </a>
+                            </div>
+
+
+                        </div>
+
+                        <div class="blog_card">
+
+                            <div class="img_wrapper">
+
+                                <img class="img-fluid" src="./assets/images/blog_main_img13.png" alt="">
+
+                                <div class="date">
+                                    <h4>18</h4>
+                                    <p>NOV</p>
+                                </div>
+
+                            </div>
+
+                            <div class="contents_wrapper">
+
+                                <div class="info flex-align-center flex-wrap">
+
+                                    <h6 class="flex-align-center">
+                                        <span class="iconify">
+                                            <iconify-icon icon="mdi:tag-outline"></iconify-icon>
+                                        </span>
+                                        Food
+                                    </h6>
+
+                                    <h6 class="flex-align-center">
+                                        <span class="iconify">
+                                            <iconify-icon icon="mdi:shield-crown-outline"></iconify-icon>
+                                        </span>
+                                        <span class="center">
+                                            By&nbsp;
+                                        </span>
+                                        Admin
+                                    </h6>
+
+                                    <h6
+                                        class="flex-align-center justify-content-center justify-content-lg-start comments">
+                                        <span class="iconify">
+                                            <iconify-icon icon="ph:chat-centered"></iconify-icon>
+                                        </span>
+                                        65 Comments
+                                    </h6>
+
+                                </div>
+
+                                <h4>Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</h4>
+
+                                <a class="d-inline-flex align-items-center" href="">
+                                    Read More
+                                    <span class="iconify">
+                                        <iconify-icon icon="fluent:arrow-right-24-filled"></iconify-icon>
+                                    </span>
+                                </a>
+                            </div>
+
+
+                        </div>
+
+                        <div class="blog_card">
+
+                            <div class="img_wrapper">
+
+                                <img class="img-fluid" src="./assets/images/blog_main_img14.png" alt="">
+
+                                <div class="date">
+                                    <h4>18</h4>
+                                    <p>NOV</p>
+                                </div>
+
+                            </div>
+
+                            <div class="contents_wrapper">
+
+                                <div class="info flex-align-center flex-wrap">
+
+                                    <h6 class="flex-align-center">
+                                        <span class="iconify">
+                                            <iconify-icon icon="mdi:tag-outline"></iconify-icon>
+                                        </span>
+                                        Food
+                                    </h6>
+
+                                    <h6 class="flex-align-center">
+                                        <span class="iconify">
+                                            <iconify-icon icon="mdi:shield-crown-outline"></iconify-icon>
+                                        </span>
+                                        <span class="center">
+                                            By&nbsp;
+                                        </span>
+                                        Admin
+                                    </h6>
+
+                                    <h6
+                                        class="flex-align-center justify-content-center justify-content-lg-start comments">
+                                        <span class="iconify">
+                                            <iconify-icon icon="ph:chat-centered"></iconify-icon>
+                                        </span>
+                                        65 Comments
+                                    </h6>
+
+                                </div>
+
+                                <h4>Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</h4>
+
+                                <a class="d-inline-flex align-items-center" href="">
+                                    Read More
+                                    <span class="iconify">
+                                        <iconify-icon icon="fluent:arrow-right-24-filled"></iconify-icon>
+                                    </span>
+                                </a>
+                            </div>
+
+
+                        </div>
+
+                        <div class="blog_card">
+
+                            <div class="img_wrapper">
+
+                                <img class="img-fluid" src="./assets/images/blog_main_img15.png" alt="">
+
+                                <div class="date">
+                                    <h4>18</h4>
+                                    <p>NOV</p>
+                                </div>
+
+                            </div>
+
+                            <div class="contents_wrapper">
+
+                                <div class="info flex-align-center flex-wrap">
+
+                                    <h6 class="flex-align-center">
+                                        <span class="iconify">
+                                            <iconify-icon icon="mdi:tag-outline"></iconify-icon>
+                                        </span>
+                                        Food
+                                    </h6>
+
+                                    <h6 class="flex-align-center">
+                                        <span class="iconify">
+                                            <iconify-icon icon="mdi:shield-crown-outline"></iconify-icon>
+                                        </span>
+                                        <span class="center">
+                                            By&nbsp;
+                                        </span>
+                                        Admin
+                                    </h6>
+
+                                    <h6
+                                        class="flex-align-center justify-content-center justify-content-lg-start comments">
+                                        <span class="iconify">
+                                            <iconify-icon icon="ph:chat-centered"></iconify-icon>
+                                        </span>
+                                        65 Comments
+                                    </h6>
+
+                                </div>
+
+                                <h4>Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</h4>
+
+                                <a class="d-inline-flex align-items-center" href="">
+                                    Read More
+                                    <span class="iconify">
+                                        <iconify-icon icon="fluent:arrow-right-24-filled"></iconify-icon>
+                                    </span>
+                                </a>
+                            </div>
+
+
+                        </div>
+
+                        <div class="blog_card">
+
+                            <div class="img_wrapper">
+
+                                <img class="img-fluid" src="./assets/images/blog_main_img16.png" alt="">
+
+                                <div class="date">
+                                    <h4>18</h4>
+                                    <p>NOV</p>
+                                </div>
+
+                            </div>
+
+                            <div class="contents_wrapper">
+
+                                <div class="info flex-align-center flex-wrap">
+
+                                    <h6 class="flex-align-center">
+                                        <span class="iconify">
+                                            <iconify-icon icon="mdi:tag-outline"></iconify-icon>
+                                        </span>
+                                        Food
+                                    </h6>
+
+                                    <h6 class="flex-align-center">
+                                        <span class="iconify">
+                                            <iconify-icon icon="mdi:shield-crown-outline"></iconify-icon>
+                                        </span>
+                                        <span class="center">
+                                            By&nbsp;
+                                        </span>
+                                        Admin
+                                    </h6>
+
+                                    <h6
+                                        class="flex-align-center justify-content-center justify-content-lg-start comments">
+                                        <span class="iconify">
+                                            <iconify-icon icon="ph:chat-centered"></iconify-icon>
+                                        </span>
+                                        65 Comments
+                                    </h6>
+
+                                </div>
+
+                                <h4>Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</h4>
+
+                                <a class="d-inline-flex align-items-center" href="">
+                                    Read More
+                                    <span class="iconify">
+                                        <iconify-icon icon="fluent:arrow-right-24-filled"></iconify-icon>
+                                    </span>
+                                </a>
+                            </div>
+
+
+                        </div>
+
+                        <div class="blog_card">
+
+                            <div class="img_wrapper">
+
+                                <img class="img-fluid" src="./assets/images/blog_main_img17.png" alt="">
+
+                                <div class="date">
+                                    <h4>18</h4>
+                                    <p>NOV</p>
+                                </div>
+
+                            </div>
+
+                            <div class="contents_wrapper">
+
+                                <div class="info flex-align-center flex-wrap">
+
+                                    <h6 class="flex-align-center">
+                                        <span class="iconify">
+                                            <iconify-icon icon="mdi:tag-outline"></iconify-icon>
+                                        </span>
+                                        Food
+                                    </h6>
+
+                                    <h6 class="flex-align-center">
+                                        <span class="iconify">
+                                            <iconify-icon icon="mdi:shield-crown-outline"></iconify-icon>
+                                        </span>
+                                        <span class="center">
+                                            By&nbsp;
+                                        </span>
+                                        Admin
+                                    </h6>
+
+                                    <h6
+                                        class="flex-align-center justify-content-center justify-content-lg-start comments">
+                                        <span class="iconify">
+                                            <iconify-icon icon="ph:chat-centered"></iconify-icon>
+                                        </span>
+                                        65 Comments
+                                    </h6>
+
+                                </div>
+
+                                <h4>Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</h4>
+
+                                <a class="d-inline-flex align-items-center" href="">
+                                    Read More
+                                    <span class="iconify">
+                                        <iconify-icon icon="fluent:arrow-right-24-filled"></iconify-icon>
+                                    </span>
+                                </a>
+                            </div>
+
+
+                        </div>
+
+                        <div class="blog_card">
+
+                            <div class="img_wrapper">
+
+                                <img class="img-fluid" src="./assets/images/blog_main_img18.png" alt="">
+
+                                <div class="date">
+                                    <h4>18</h4>
+                                    <p>NOV</p>
+                                </div>
+
+                            </div>
+
+                            <div class="contents_wrapper">
+
+                                <div class="info flex-align-center flex-wrap">
+
+                                    <h6 class="flex-align-center">
+                                        <span class="iconify">
+                                            <iconify-icon icon="mdi:tag-outline"></iconify-icon>
+                                        </span>
+                                        Food
+                                    </h6>
+
+                                    <h6 class="flex-align-center">
+                                        <span class="iconify">
+                                            <iconify-icon icon="mdi:shield-crown-outline"></iconify-icon>
+                                        </span>
+                                        <span class="center">
+                                            By&nbsp;
+                                        </span>
+                                        Admin
+                                    </h6>
+
+                                    <h6
+                                        class="flex-align-center justify-content-center justify-content-lg-start comments">
+                                        <span class="iconify">
+                                            <iconify-icon icon="ph:chat-centered"></iconify-icon>
+                                        </span>
+                                        65 Comments
+                                    </h6>
+
+                                </div>
+
+                                <h4>Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</h4>
+
+                                <a class="d-inline-flex align-items-center" href="">
+                                    Read More
+                                    <span class="iconify">
+                                        <iconify-icon icon="fluent:arrow-right-24-filled"></iconify-icon>
+                                    </span>
+                                </a>
+                            </div>
+
+
+                        </div>
+
+                        <div class="blog_card">
+
+                            <div class="img_wrapper">
+
+                                <img class="img-fluid" src="./assets/images/blog_main_img19.png" alt="">
+
+                                <div class="date">
+                                    <h4>18</h4>
+                                    <p>NOV</p>
+                                </div>
+
+                            </div>
+
+                            <div class="contents_wrapper">
+
+                                <div class="info flex-align-center flex-wrap">
+
+                                    <h6 class="flex-align-center">
+                                        <span class="iconify">
+                                            <iconify-icon icon="mdi:tag-outline"></iconify-icon>
+                                        </span>
+                                        Food
+                                    </h6>
+
+                                    <h6 class="flex-align-center">
+                                        <span class="iconify">
+                                            <iconify-icon icon="mdi:shield-crown-outline"></iconify-icon>
+                                        </span>
+                                        <span class="center">
+                                            By&nbsp;
+                                        </span>
+                                        Admin
+                                    </h6>
+
+                                    <h6
+                                        class="flex-align-center justify-content-center justify-content-lg-start comments">
+                                        <span class="iconify">
+                                            <iconify-icon icon="ph:chat-centered"></iconify-icon>
+                                        </span>
+                                        65 Comments
+                                    </h6>
+
+                                </div>
+
+                                <h4>Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</h4>
+
+                                <a class="d-inline-flex align-items-center" href="">
+                                    Read More
+                                    <span class="iconify">
+                                        <iconify-icon icon="fluent:arrow-right-24-filled"></iconify-icon>
+                                    </span>
+                                </a>
+                            </div>
+
+
+                        </div>
+
+                        <div class="blog_card">
+
+                            <div class="img_wrapper">
+
+                                <img class="img-fluid" src="./assets/images/blog_main_img20.png" alt="">
+
+                                <div class="date">
+                                    <h4>18</h4>
+                                    <p>NOV</p>
+                                </div>
+
+                            </div>
+
+                            <div class="contents_wrapper">
+
+                                <div class="info flex-align-center flex-wrap">
+
+                                    <h6 class="flex-align-center">
+                                        <span class="iconify">
+                                            <iconify-icon icon="mdi:tag-outline"></iconify-icon>
+                                        </span>
+                                        Food
+                                    </h6>
+
+                                    <h6 class="flex-align-center">
+                                        <span class="iconify">
+                                            <iconify-icon icon="mdi:shield-crown-outline"></iconify-icon>
+                                        </span>
+                                        <span class="center">
+                                            By&nbsp;
+                                        </span>
+                                        Admin
+                                    </h6>
+
+                                    <h6
+                                        class="flex-align-center justify-content-center justify-content-lg-start comments">
+                                        <span class="iconify">
+                                            <iconify-icon icon="ph:chat-centered"></iconify-icon>
+                                        </span>
+                                        65 Comments
+                                    </h6>
+
+                                </div>
+
+                                <h4>Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</h4>
+
+                                <a class="d-inline-flex align-items-center" href="">
+                                    Read More
+                                    <span class="iconify">
+                                        <iconify-icon icon="fluent:arrow-right-24-filled"></iconify-icon>
+                                    </span>
+                                </a>
+                            </div>
+
+
+                        </div>
+
+                        <div class="blog_card">
+
+                            <div class="img_wrapper">
+
+                                <img class="img-fluid" src="./assets/images/blog_main_img21.png" alt="">
+
+                                <div class="date">
+                                    <h4>18</h4>
+                                    <p>NOV</p>
+                                </div>
+
+                            </div>
+
+                            <div class="contents_wrapper">
+
+                                <div class="info flex-align-center flex-wrap">
+
+                                    <h6 class="flex-align-center">
+                                        <span class="iconify">
+                                            <iconify-icon icon="mdi:tag-outline"></iconify-icon>
+                                        </span>
+                                        Food
+                                    </h6>
+
+                                    <h6 class="flex-align-center">
+                                        <span class="iconify">
+                                            <iconify-icon icon="mdi:shield-crown-outline"></iconify-icon>
+                                        </span>
+                                        <span class="center">
+                                            By&nbsp;
+                                        </span>
+                                        Admin
+                                    </h6>
+
+                                    <h6
+                                        class="flex-align-center justify-content-center justify-content-lg-start comments">
+                                        <span class="iconify">
+                                            <iconify-icon icon="ph:chat-centered"></iconify-icon>
+                                        </span>
+                                        65 Comments
+                                    </h6>
+
+                                </div>
+
+                                <h4>Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</h4>
+
+                                <a class="d-inline-flex align-items-center" href="">
+                                    Read More
+                                    <span class="iconify">
+                                        <iconify-icon icon="fluent:arrow-right-24-filled"></iconify-icon>
+                                    </span>
+                                </a>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="pagination_wrapper w-100 mt-3 flex-xy-center">
+
+                            <ul class="pagination flex-align-center">
+
+                                <li class="arrow_left flex-align-center">
+                                    <a href="" class="iconify">
+                                        <iconify-icon icon="solar:alt-arrow-left-outline"></iconify-icon>
+                                    </a>
+                                </li>
+
+                                <li class="page">
+                                    <a href="">
+                                        1
+                                    </a>
+                                </li>
+
+                                <li class="page">
+                                    <a href="">
+                                        2
+                                    </a>
+                                </li>
+                                <li class="page">
+                                    <a href="">
+                                        3
+                                    </a>
+                                </li>
+
+                                <li class="page">
+                                    <a href="">
+                                        4
+                                    </a>
+                                </li>
+                                <li class="page">
+                                    <a href="">
+                                        5
+                                    </a>
+                                </li>
+
+                                <li class="more">
+                                    ...
+                                </li>
+
+                                <li class="page">
+                                    <a href="">
+                                        21
+                                    </a>
+                                </li>
+
+                                <li class="arrow_right active flex-align-center">
+                                    <a href="" class="iconify">
+                                        <iconify-icon icon="solar:alt-arrow-right-outline"></iconify-icon>
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <!-- ==== blog_main Part End ====== -->
+            </div>
+        </section>
+        <!-- ========= blog SECTION END =============== -->
+
+    </main>
+
+    <footer>
+        <!-- ========= newsletter SECTION START =============== -->
+        <section id="newsletter">
+            <div class="container">
+                <div class="row g-0 px-3">
+                    <div class="col-lg-3 text-center text-lg-start">
+
+                        <a class="brand_logo navbar-brand" href="#">
+                            <img src="./assets/images/brand_logo.png" alt="">
+                            Ecobazar
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 contents order-2 order-lg-1 text-center text-lg-start">
+                        <div class="wrapper">
+                            <h4>Subscribe our Newsletter</h4>
+                            <p>Pellentesque eu nibh eget mauris congue mattis matti.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 subscription order-1 order-lg-2">
+                        <form action="">
+                            <input type="text" placeholder="Your email address">
+                            <button>Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========= newsletter SECTION END =============== -->
+
+        <!-- ========= main-footer SECTION START =============== -->
+        <section id="main-footer">
+            <div class="container">
+                <div class="row g-0 footer_row">
+                    <div class="col-lg-3 company_detail text-center text-lg-start">
+                        <h4>About Shopery</h4>
+                        <p>Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna
+                            congue nec.</p>
+                        <div class="flex-align-center justify-content-center justify-content-lg-start contact_link">
+                            <span class="number">(219) 555-0114</span>
+                            <span class="or">or</span>
+                            <span class="email">Proxy@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-6 flex-justify-center account">
+                        <ul>
+                            <li>My account</li>
+                            <li><a href="">My account</a></li>
+                            <li><a href="">Order History</a></li>
+                            <li><a href="">Shopping Cart</a></li>
+                            <li><a href="">Wishlist</a></li>
+                            <li><a href="">Settings</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-6 flex-justify-center helps">
+                        <ul>
+                            <li>Helps</li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Faqs</a></li>
+                            <li><a href="">Terms & Condition</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-6 flex-justify-center proxy">
+                        <ul>
+                            <li>Proxy</li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Shop</a></li>
+                            <li><a href="">Product</a></li>
+                            <li><a href="">Products Details</a></li>
+                            <li><a href="">Track Order</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 text-center text-lg-start instagram">
+                        <h4>Instagram</h4>
+                        <div class="img_container">
+
+
+                            <div class="img_wrapper">
+                                <img class="img-fluid w-100" src="./assets/images/main_footer_img1.png" alt="">
+                            </div>
+
+
+                            <div class="img_wrapper">
+                                <img class="img-fluid w-100" src="./assets/images/main_footer_img2.png" alt="">
+                            </div>
+
+
+                            <div class="img_wrapper">
+                                <img class="img-fluid w-100" src="./assets/images/main_footer_img3.png" alt="">
+                            </div>
+
+
+                            <div class="img_wrapper">
+                                <img class="img-fluid w-100" src="./assets/images/main_footer_img4.png" alt="">
+                            </div>
+
+                            <div class="img_wrapper">
+                                <img class="img-fluid w-100" src="./assets/images/main_footer_img5.png" alt="">
+                            </div>
+
+
+                            <div class="img_wrapper">
+                                <img class="img-fluid w-100" src="./assets/images/main_footer_img6.png" alt="">
+                            </div>
+
+
+                            <div class="img_wrapper">
+                                <img class="img-fluid w-100" src="./assets/images/main_footer_img7.png" alt="">
+                            </div>
+
+
+                            <div class="img_wrapper">
+                                <img class="img-fluid w-100" src="./assets/images/main_footer_img8.png" alt="">
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-0 align-items-center copyright_row">
+
+                    <ul class="col-lg-3 social_icons d-flex justify-content-center justify-content-lg-start">
+                        <li class="flex-align-center">
+                            <a href="" class="iconify">
+                                <iconify-icon icon="basil:facebook-solid"></iconify-icon>
+                            </a>
+                        </li>
+                        <li class="flex-align-center">
+                            <a href="" class="iconify">
+                                <iconify-icon icon="pajamas:twitter"></iconify-icon>
+                            </a>
+                        </li>
+                        <li class="flex-align-center">
+                            <a href="" class="iconify">
+                                <iconify-icon icon="jam:pinterest"></iconify-icon>
+                            </a>
+                        </li>
+                        <li class="flex-align-center">
+                            <a href="" class="iconify">
+                                <iconify-icon icon="akar-icons:instagram-fill"></iconify-icon>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="col-lg-6 copyright text-center">
+                        <p>Shopery eCommerce © 2021. All Rights Reserved</p>
+                    </div>
+
+                    <div class="col-lg-3 payment_icon text-center text-lg-end">
+                        <img class="img-fluid" src="./assets/images/main_footer_img9.png" alt="">
+                        <img class="img-fluid" src="./assets/images/main_footer_img10.png" alt="">
+                        <img class="img-fluid" src="./assets/images/main_footer_img11.png" alt="">
+                        <img class="img-fluid" src="./assets/images/main_footer_img12.png" alt="">
+                        <img class="img-fluid" src="./assets/images/main_footer_img13.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <img src="./assets/images/main_footer_vector1.png" alt="" class="vector_1 d-none d-lg-inline-block">
+            <img src="./assets/images/main_footer_vector2.png" alt="" class="vector_2 d-none d-lg-inline-block">
+        </section>
+        <!-- ========= main-footer SECTION END =============== -->
+    </footer>
+    <!--                             BLOG PAGE END                               -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- other -->
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/iconify-icon.min.js"></script>
+    <!-- custom js -->
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
