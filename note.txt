@@ -9,11 +9,11 @@ Eco bazar project ---------
 
 
 Page navigation------
-1. Home page--Initial
+1. Home page--Initial...or,...Mobile Menu Pages -- Home (link)...or,...Breadcrumbs -- Home (link)
 2. Single Product page-- Click over any Product
-3. Shopping Cart page-- From middle header icon group cart link, from cart pop up-- Go To Cart......or,...........From any product cart icon , from cart pop up -- Go To Cart
-4. Checkout page-- From middle header icon group cart link, from cart pop up-- Go To Cart..or,......From any product cart icon , from cart pop up -- Checkout... or, ...From Shopping cart--Procceed to Checkout.
-5. Blog page-- From bottom header navigation bar --Blog
+3. Shopping Cart page-- From middle header icon group cart link, from cart pop up-- Go To Cart...or,...From any product cart icon , from cart pop up-- Go To Cart...or,...Breadcrumbs-- Shopping Cart (link)
+4. Checkout page-- From middle header icon group cart link, from cart pop up-- Go To Cart...or,...From any product cart icon , from cart pop up-- Checkout...or,...From Shopping cart-- Procceed to Checkout.
+5. Blog page-- From bottom header navigation bar --Blog...or,...Mobile Menu Pages-- Blog (link)
 
 
 reminder: always learn first not copy paste ...
